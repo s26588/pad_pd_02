@@ -86,8 +86,11 @@ print(orders_df.shape)
 customers_df.rename(columns={'customerID': 'customer_id'}, inplace=True)
 
 ## d)
+'''
+DataFrame.merge
+'''
 purchase_df = orders_df.merge(customers_df, how='left', on='customer_id')
-print(purchase_df);
+# print(purchase_df);
 
 
 ### Zadanie 3
